@@ -61,4 +61,4 @@ typings/
 .next
 
 # do not share
-.interne-only
+.interne-only/*
