@@ -1,0 +1,3 @@
+Uber:
+identifiant: WIFL81tNNKuQUhjtd-oT4vYA1VIOBIYY
+clé secrète: Bsp9nl6Sx87mJ6ps2BhwEzj_iVgRqtCGX3xGJFva
