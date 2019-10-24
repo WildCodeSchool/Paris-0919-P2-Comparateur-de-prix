@@ -4,4 +4,4 @@ Backlog: https://docs.google.com/spreadsheets/d/1GIq0fukaXnsqjxWvQEKAomcvZDLsXAJ
 
 Burndown: https://docs.google.com/spreadsheets/d/1pwzeF5w8SuzrvkaOPnX8NQ5XzCe2xUhqW5w2bKuEzh8/edit?usp=sharing
 
-api PlumLab key: ajouter le component ConfigKey en local SEULEMENT (demander le fichier à Arthur) dans components et mettre le .ConfigKeys en gitignore
+api PlumLab key: ajouter le component ConfigKey en local SEULEMENT (demander le fichier à Arthur) dans components et mettre le "ConfigKeys.js" en gitignore
