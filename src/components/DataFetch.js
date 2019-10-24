@@ -2,20 +2,23 @@ import React from 'react'
 import axios from 'axios'
 import DisplayData from './DisplayData'
 import ConfigKeys from './ConfigKeys'
+import LocationData from './LocationData'
 
 class DataFetch extends React.Component {
   state = {
-    data: '?',
+    data: '',
     isLoading: false,
   }
 
   getData = () => {
-    // Send the request
     axios
-      .get(
-        'https://api.plume.io/3.0/live?latitude=48.85&longitude=2.294&token=' +
-          ConfigKeys,
-      )
+      .get('https://api.plume.io/3.0/live?', {
+        params: {
+          latitude: LocationData.latitude[0],
+          longitude: LocationData.longitude[0],
+          token: ConfigKeys,
+        },
+      })
       // Extract the DATA from the received response
       .then(
         response =>

@@ -62,4 +62,4 @@ typings/
 
 # do not share
 .interne-only/*
-.Secrete-keys.js
+.ConfigKeys.js
