@@ -1,0 +1,94 @@
+.carre{
+    width: 375px;
+    height: 500px;
+    background-color: #6FCF97;
+    margin-top: 2cm;
+    margin:none;
+    border-top-left-radius: 150px 100px;
+    border-bottom-right-radius: 150px 100px;
+   
+}
+
+.head{ 
+  margin:none;
+}
+
+.tablet {
+	width: 120px;
+	height: 160px;
+	margin: 0 80px;
+	border: 4px #fff solid;
+	border-top-width: 15px;
+	border-bottom-width: 20px;	
+	border-radius:         4px;
+	-moz-border-radius:    4px;
+	-webkit-border-radius: 4px; }
+
+.tablet:before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 3px;
+	margin: -9px auto;
+	background: black;
+	border-radius:         4px;
+	-moz-border-radius:    4px;
+	-webkit-border-radius: 4px; }
+
+.tablet:after {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px auto;
+	background: black;
+	border-radius:         10px;
+	-moz-border-radius:    10px;
+	-webkit-border-radius: 10px; }
+
+.tablet .content {
+	width: 120px;
+	height: 160px;
+	margin: 15px 0 0 0;
+	background: whitesmoke;
+	color: ;
+	font-size: 0.5em;
+	overflow: hidden;
+	z-index: 1000; }
+
+.tablet .wrap {
+	width: 1000px;
+}
+
+.tablet ul {
+	float: left;
+	width: 100px;
+	margin: 10px;
+  animation:         tablet 4s cubic-bezier(0.250, 0.100, 0.250, 1.000) infinite;
+	-o-animation:      tablet 4s cubic-bezier(0.250, 0.100, 0.250, 1.000) infinite;
+	-moz-animation:    tablet 4s cubic-bezier(0.250, 0.100, 0.250, 1.000) infinite;
+	-webkit-animation: tablet 4s cubic-bezier(0.250, 0.100, 0.250, 1.000) infinite;  
+}
+
+.tablet ul li {
+	height: 6px;
+	margin: 0 0 5px 0;
+	border-color: #2980b9;
+	background: #2980b9; }
+
+@keyframes tablet { 
+  20%,60% { transform: translate(-120px) }
+  80%     { transform: translate(0) }
+}
+@-o-keyframes tablet { 
+  20%,60% { -o-transform: translate(-120px) }
+  80%     { -o-transform: translate(0) }
+}
+@-moz-keyframes tablet { 
+  20%,60% { -moz-transform: translate(-120px) }
+  80%     { -moz-transform: translate(0) }
+}
+@-webkit-keyframes tablet { 
+  20%,60% { -webkit-transform: translate(-120px) }
+  80%     { -webkit-transform: translate(0) }
+}
