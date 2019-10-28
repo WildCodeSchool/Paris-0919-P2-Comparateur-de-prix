@@ -1,0 +1,129 @@
+ 
+ footer {
+    display: flex;
+    height: 10vh;
+    background-image: url(https://us.123rf.com/450wm/docer2000/docer20001603/docer2000160300038/54906905-vert-luxuriant-fra%C3%AEcheur-herbe-texture-motif-fonds-d-%C3%A9cran.jpg?ver=6);
+    border-top: 3px solid rgba(26, 192, 81, 0.884);
+    width: 100%;
+    /* --- ici  permet de garder le footer sticky ---- */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+ }
+ 
+ 
+ 
+ #utils_left {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5vh;
+    font-weight: 1000;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 1em;
+    margin-top: 40px;
+    width: 50%;
+ }
+ 
+ 
+ #utils_left li a {
+    color: black;
+    text-decoration: none;
+    
+ }
+ 
+ #utils_left li a:hover{
+    border-top: 1px solid black;
+    border-bottom: 1px solid blanchedalmond;
+    
+ }
+ 
+ #utils_right {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5vh;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 30%;
+    padding: 0.5em 1em;
+    margin-top: 30px;
+    width: 50%;
+    font-weight: 1000;
+ }
+ 
+ 
+ #utils_right li a {
+    color: black;
+    text-decoration: none;
+    width: auto;
+    
+ }
+ #utils_right li a:hover {
+    border-top: 1px solid #251111;
+    border-bottom: 1px solid #140404;
+ }
+ 
+ #utils_right span {
+    color: #251111;
+    width: auto;
+ }
+ 
+ 
+ /* ----------------------------      Media Queries      --------------------------------------------  */
+ 
+ 
+ 
+ @media only screen and (max-width: 961px) {
+    footer {
+       height: auto;
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       right: 0;
+ 
+ 
+    }
+ 
+ 
+    .form-style-new {
+       max-width: 600px;
+       height: auto;
+       font-family: Arial, Helvetica, sans-serif;
+       margin: auto;
+    }
+ 
+ 
+    #utils_left {
+ 
+ 
+       display: inline-block;
+       flex-wrap: wrap;
+       font-size: 2vh;
+       height: 70%;
+       justify-content: space-between;
+       list-style-type: none;
+       padding: 0 1em;
+       
+    }
+ 
+ 
+    #utils_right {
+       display: inline-block;
+       flex-wrap: wrap;
+       font-size: 2vh;
+       height: 50%;
+       justify-content: space-around;
+       list-style-type: none;
+       margin-left: 15%;
+       padding: 0.5em 1em;
+ 
+ 
+    }
+    
+ 
+ 
+ 
+ }
