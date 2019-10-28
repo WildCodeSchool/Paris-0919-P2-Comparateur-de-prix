@@ -1,97 +1,69 @@
     
 .container {
- 
   height: 700px;
-  background-color: #6FCF97;
-  margin-top: 4cm;
-  margin:none;
+background: linear-gradient(to right, #05abe0 0%,#53cbf1 20%,#60f2bc 100%);
   border-top-left-radius: 150px 100px;
   border-bottom-right-radius: 150px 100px;
+  margin-left: -7px;
+  margin-right: -7px;
+margin-top: 2cm;
+display: block;
 }
 
 
-.thermometre { 
-   display:  flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 120vw;
-}
-.wrapper { 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: -16cm;
-}
-  
-/*.balloon
- {  width: 80px;
-  height: 80px;
-  border: #175883 10px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-65%, -25%);
- }
-  
-.balloon-mercury { 
-  background-color: #F47468;
+.echelle {
   width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  border: 5px #ff9b92 solid;
+  height: 300px;
+  padding: 20px;
+  font-family: arial;
+  max-width: 650px;
+  margin-bottom: -5cm;
 }
- */ 
-.outside-border { 
-  position: relative;
+
+
+
+
+.Note {
+  width: 80%;
+  height: 20px;
+  background: white;
+  border-radius: 10px;
+  float: left;
+  overflow: hidden;
+margin-left: 1cm;
+}
+
+.progress {
+  float: left;
+  width: 16%;
+  height: 20px;
+background: green;
+  
+}
+
+/*.echelle {
   width: 100%;
-  border: black 10px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-.green { 
-  background-color: green;
-  width: 20%;
-  height: 80%;
-  border-top-left-radius: 75px 50px;
-  border: 5px green solid;
+  height: 30px;
+  font-family: arial;
+  margin-left: 2cm;
 
-}
-.greenclear {
-    background-color:#60EF08;
-    width: 20%;
-    height: 80%;
-    
-    border: 5px #60EF08 solid;
-}
-.yellow {
-    background-color:#EFE608;
-    width: 20%;
-    height: 80%;
-    
-    border: 5px #EFE608 solid;
-}
-.orange {
-    background-color:#EFA108;
-    width: 20%;
-  height: 80%;
 
-    border: 5px #EFA108 solid;
-}
-.red {
-    background-color: #CA1313;
-    width: 20%;
-  height: 80%;
-  border-top-right-radius: 75px 50px;
-    border: 5px #CA1313 solid;
 }
 
 
+.Note{
+  width: 90%;
+  height: 20px;
+  background: white;
+  border-radius:10px;
+  margin-left: 1cm;
+}
 
+.progress {
+  width: 16%;
+  height: 20px;
+  background: green;
+  z-index: 333;
+
+
+}*/
