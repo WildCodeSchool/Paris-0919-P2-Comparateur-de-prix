@@ -1,5 +1,7 @@
 import React from 'react'
 import DataFetch from './components/DataFetch'
+import AutoCompleteText from './components/AutoCompleteText'
+import Buttons from './components/Buttons'
 
 import {
   BrowserRouter as Router,
@@ -38,6 +40,13 @@ function Home() {
   return (
     <>
       <h2>Accueil</h2>
+      <div className="App-Component">
+        <AutoCompleteText />
+        <br /> <br />
+        <AutoCompleteText />
+        <br /> <br />
+        <Buttons />
+      </div>
       <DataFetch />
     </>
   )
