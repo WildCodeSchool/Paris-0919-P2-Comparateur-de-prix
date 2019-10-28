@@ -1,28 +1,29 @@
 .carre{
     width: 375px;
-    height: 500px;
-    background-color: #6FCF97;
+    height: 650px;
+    background: linear-gradient(to right, #05abe0 0%,#53cbf1 20%,#60f2bc 100%);
     margin-top: 2cm;
-    margin:none;
     border-top-left-radius: 150px 100px;
-    border-bottom-right-radius: 150px 100px;
-   
+	border-bottom-right-radius: 150px 100px;  
+	
+
 }
 
-.head{ 
-  margin:none;
-}
 
 .tablet {
-	width: 120px;
-	height: 160px;
-	margin: 0 80px;
+	width: 90px;
+	height: 120px;
+	margin-left: 4cm;
+	margin-top: -11cm;
 	border: 4px #fff solid;
 	border-top-width: 15px;
 	border-bottom-width: 20px;	
 	border-radius:         4px;
 	-moz-border-radius:    4px;
-	-webkit-border-radius: 4px; }
+	-webkit-border-radius: 4px; 
+	
+
+}
 
 .tablet:before {
 	content: '';
@@ -47,11 +48,11 @@
 	-webkit-border-radius: 10px; }
 
 .tablet .content {
-	width: 120px;
-	height: 160px;
+	width: 90px;
+	height: 120px;
 	margin: 15px 0 0 0;
-	background: whitesmoke;
-	color: ;
+	background:black;
+	color: white ;
 	font-size: 0.5em;
 	overflow: hidden;
 	z-index: 1000; }
@@ -73,8 +74,8 @@
 .tablet ul li {
 	height: 6px;
 	margin: 0 0 5px 0;
-	border-color: #2980b9;
-	background: #2980b9; }
+	border-color:white;
+	background: white; }
 
 @keyframes tablet { 
   20%,60% { transform: translate(-120px) }

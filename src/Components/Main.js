@@ -6,19 +6,17 @@ function Main(){
 
 <div className="Container">
     
-  <div className="carre">
+  <div className="carre"></div>
       
   <div class="tablet">
 		<div class="content">
 			<div class="wrap">
 				<ul>
-					<li></li>
-					<li></li>
+					
 					<li></li>
 					<li style={{width:"40%"}}></li>
 					<li></li>
-					<li></li>
-					<li></li>
+					
 					<li></li>
 					<li style={{width:"30%"}}></li>
 					<li></li>
@@ -27,13 +25,11 @@ function Main(){
 					<li style={{width: "30%"}}></li>
 				</ul>
 				<ul>
-					<li></li>
-					<li></li>
+					
 					<li></li>
 					<li style={{width: "90%"}}></li>
 					<li></li>
-					<li></li>
-					<li></li>
+					
 					<li></li>
 					<li style={{width:"60%"}}></li>
 					<li></li>
@@ -53,7 +49,7 @@ function Main(){
 
      </div>
         
-</div>
+
         
 
 
