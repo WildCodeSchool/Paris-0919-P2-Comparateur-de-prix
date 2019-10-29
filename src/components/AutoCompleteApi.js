@@ -1,22 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import axios from 'axios'
+import './AutoComplete.css'
 
-class AutoCompleteApi extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      start: '',
-    }
-    this.handleChange = this.handleChange.bind(this)
+class AutoCompleteApi extends React.Component {
+  state = {
+    start: '',
+    suggestions: [],
   }
 
-  handleSubmit(event) {
-    event.preventDefault()
+  handleSubmit = e => {
+    e.preventDefault()
   }
 
-  handleChange(event) {
-    let str = event.target.value
-    this.setState({ start: event.target.value }, () => {
+  handleChange = e => {
+    this.setState({ start: e.target.value }, () => {
       if (this.state.start.length >= 6) {
         this.getAdress()
       }
@@ -25,39 +22,69 @@ class AutoCompleteApi extends Component {
 
   getAdress = () => {
     axios
-      .get('https://api-adresse.data.gouv.fr/search/?', {
+      .get('https://api-adresse.data.gouv.fr/search/', {
         params: {
           q: this.state.start,
-          autocomplete: '0',
+          limit: '8',
         },
       })
+
       // Extract the DATA from the received response
       .then(
         response =>
-          console.log('fdsfsdfsdfsfsdf  ', response.data.values) ||
-          response.data.values,
+          console.log('TESTTESTTEST  ', response.data.features) ||
+          response.data.features,
       )
       // Use this data to update the state
       .then(value =>
         this.setState({
-          data: value,
+          suggestions: value,
         }),
       )
   }
 
+  suggestionsSelected(value) {
+    this.setState(() => ({
+      start: value,
+      suggestions: [],
+    }))
+  }
+
+  renderSugegestions() {
+    const { suggestions } = this.state
+    if (suggestions.length === 0) {
+      return null
+    }
+    return (
+      <ul>
+        {suggestions.map(item => (
+          <li
+            onClick={() =>
+              this.suggestionsSelected(item.properties.label)
+            }
+          >
+            {item.properties.label}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>Domicile: </label>
-        {/* show a class or another depending on maximumReached */}
-        <input
-          id="start"
-          name="start"
-          type="text"
-          value={this.state.start}
-          onChange={this.handleChange}
-        />
-      </form>
+      <div className="AutoCompleteText">
+        <form onSubmit={this.handleSubmit}>
+          <label>Domicile: </label>
+          <input
+            id="start"
+            name="start"
+            type="text"
+            value={this.state.start}
+            onChange={this.handleChange}
+          />
+          {this.renderSugegestions()}
+        </form>
+      </div>
     )
   }
 }

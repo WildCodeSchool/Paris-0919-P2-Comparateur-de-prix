@@ -51,7 +51,10 @@ export default class AutoCompleteText extends React.Component {
     const { text } = this.state
     return (
       <div className="AutoCompleteText">
+        <label>Entreprise: </label>
         <input
+          id="text"
+          name="text"
           value={text}
           onChange={this.onTextChanged}
           type="text"
