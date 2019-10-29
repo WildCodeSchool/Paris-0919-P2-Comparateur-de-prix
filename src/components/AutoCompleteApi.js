@@ -6,6 +6,7 @@ class AutoCompleteApi extends React.Component {
   state = {
     start: '',
     suggestions: [],
+    coord: [],
   }
 
   handleSubmit = e => {
@@ -47,6 +48,7 @@ class AutoCompleteApi extends React.Component {
     this.setState(() => ({
       start: value,
       suggestions: [],
+      coord: '',
     }))
   }
 
@@ -62,6 +64,7 @@ class AutoCompleteApi extends React.Component {
             onClick={() =>
               this.suggestionsSelected(item.properties.label)
             }
+            key={item.properties.label}
           >
             {item.properties.label}
           </li>

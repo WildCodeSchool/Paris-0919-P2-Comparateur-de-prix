@@ -40,7 +40,10 @@ export default class AutoCompleteText extends React.Component {
     return (
       <ul>
         {suggestions.map(item => (
-          <li onClick={() => this.suggestionsSelected(item)}>
+          <li
+            onClick={() => this.suggestionsSelected(item)}
+            key={item}
+          >
             {item}
           </li>
         ))}
