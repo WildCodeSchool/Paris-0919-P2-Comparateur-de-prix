@@ -48,6 +48,7 @@ function Home() {
         <Buttons />
       </div>
       <DataFetch />
+      
     </>
   )
 }
