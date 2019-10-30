@@ -14,28 +14,26 @@ function Main(){
 				<ul>
 					
 					<li></li>
-					<li style={{width:"40%"}}></li>
+
 					<li></li>
 					
 					<li></li>
-					<li style={{width:"30%"}}></li>
+				
 					<li></li>
 					<li></li>
-					<li style={{width: "40%"}}></li>
-					<li style={{width: "30%"}}></li>
+					
 				</ul>
 				<ul>
 					
 					<li></li>
-					<li style={{width: "90%"}}></li>
+					
 					<li></li>
 					
 					<li></li>
-					<li style={{width:"60%"}}></li>
+					
 					<li></li>
 					<li></li>
-					<li style={{width: "70%"}}></li>
-					<li style={{width: "80%"}}></li>
+					
 				</ul>
 			</div>
 		</div>

@@ -1,20 +1,19 @@
 .carre{
-    width: 375px;
-    height: 650px;
+	height: 650px;
     background: linear-gradient(to right, #05abe0 0%,#53cbf1 20%,#60f2bc 100%);
     margin-top: 2cm;
     border-top-left-radius: 150px 100px;
-	border-bottom-right-radius: 150px 100px;  
-	
-
+	border-bottom-right-radius: 150px 100px;
+	margin-bottom: 2cm; 
+	display: block;
 }
 
 
 .tablet {
-	width: 90px;
+	width: 90px; 
 	height: 120px;
 	margin-left: 4cm;
-	margin-top: -11cm;
+	margin-top: -14cm;
 	border: 4px #fff solid;
 	border-top-width: 15px;
 	border-bottom-width: 20px;	
