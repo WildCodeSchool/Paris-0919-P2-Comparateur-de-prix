@@ -5,6 +5,7 @@ import AutoCompleteApi from './components/AutoCompleteApi'
 import Buttons from './components/Buttons'
 import Footer from './components/Footer'
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,11 +27,11 @@ export default function App() {
         </ul>
 
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
-          </Route>
-          <Route path="/">
-            <Home />
           </Route>
         </Switch>
       </div>
@@ -92,3 +93,6 @@ function About() {
     </>
   )
 }
+
+  
+
