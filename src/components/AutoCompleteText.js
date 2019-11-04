@@ -52,7 +52,7 @@ export default class AutoCompleteText extends React.Component {
     return (
       <div className="AutoCompleteText">
         <label>Entreprise: </label>
-        <input
+        <input 
           id="text"
           name="text"
           value={text}

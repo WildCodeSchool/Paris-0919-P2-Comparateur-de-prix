@@ -59,11 +59,11 @@ function Home() {
 
 
       <div className="Container">
-        <AutoCompleteApi />
-        <br /> <br />
-        <AutoCompleteText />
-        <br /> <br />
+     <div className="dom"><AutoCompleteApi />
+       <div className="travail"> <AutoCompleteText />
         <Buttons />
+        </div>
+      </div>
       </div>
       <DataFetch />
       <Footer />
