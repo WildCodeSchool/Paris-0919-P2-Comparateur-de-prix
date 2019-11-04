@@ -36,7 +36,7 @@ class DataFetch extends React.Component {
   }
 
   render() {
-    console.log('bip', this.state.data);
+    console.log(this.state.data);
     return (
       <>
         <button type="button" onClick={this.getData}>
