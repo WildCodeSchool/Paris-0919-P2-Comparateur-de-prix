@@ -10,7 +10,7 @@ class AutoCompleteApi extends React.Component {
   }
 
   handleSubmit = e => {
-    e.preventDefault()
+    e.preventDefault() 
   }
 
   handleChange = e => {

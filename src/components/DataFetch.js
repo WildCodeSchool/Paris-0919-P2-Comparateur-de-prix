@@ -3,6 +3,7 @@ import axios from 'axios'
 import DisplayData from './DisplayData'
 import ConfigKeys from './ConfigKeys'
 import LocationData from './LocationData'
+import DataAnalyse from './DataAnalyse'
 
 class DataFetch extends React.Component {
   state = {
@@ -14,8 +15,8 @@ class DataFetch extends React.Component {
     axios
       .get('https://api.plume.io/3.0/live?', {
         params: {
-          latitude: LocationData.latitude[0],
-          longitude: LocationData.longitude[0],
+          latitude: LocationData[0],
+          longitude: LocationData[1],
           token: ConfigKeys,
         },
       })
@@ -35,16 +36,20 @@ class DataFetch extends React.Component {
   }
 
   render() {
+    console.log(this.state.data)
     return (
       <>
-        {this.state.isLoading ? (
-          <DisplayData data={this.state.data} />
-        ) : (
-          <div>... Chargement</div>
-        )}
         <button type="button" onClick={this.getData}>
           Obtenir la pollution en direct
         </button>
+        {this.state.isLoading ? (
+          <div>
+            <DisplayData data={this.state.data} />
+            <DataAnalyse data={this.state.data} />
+          </div>
+        ) : (
+          <div>... Chargement</div>
+        )}
       </>
     )
   }
