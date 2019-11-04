@@ -4,6 +4,7 @@ import AutoCompleteText from './components/AutoCompleteText'
 import AutoCompleteApi from './components/AutoCompleteApi'
 import Buttons from './components/Buttons'
 import Footer from './components/Footer'
+import './App.css'
 
 import {
   BrowserRouter as Router,
@@ -42,7 +43,22 @@ function Home() {
   return (
     <>
       <h2>Accueil</h2>
-      <div className="App-Component">
+
+      <div >
+    
+    <div className="carre">
+
+        <div className="Card"></div>
+
+    </div>
+
+</div> 
+
+)
+}
+
+
+      <div className="Container">
         <AutoCompleteApi />
         <br /> <br />
         <AutoCompleteText />
