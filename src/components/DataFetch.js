@@ -4,6 +4,7 @@ import DisplayData from './DisplayData'
 import ConfigKeys from './ConfigKeys'
 import LocationData from './LocationData'
 import DataAnalyse from './DataAnalyse'
+import './DataFetch.css'
 
 class DataFetch extends React.Component {
   state = {
@@ -39,7 +40,11 @@ class DataFetch extends React.Component {
     console.log(this.state.data)
     return (
       <>
-        <button type="button" onClick={this.getData}>
+        <button
+          type="button"
+          className="DataFetch-but"
+          onClick={this.getData}
+        >
           Obtenir la pollution en direct
         </button>
         {this.state.isLoading ? (

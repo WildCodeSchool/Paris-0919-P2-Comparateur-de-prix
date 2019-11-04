@@ -2,7 +2,6 @@ import React from 'react'
 import DataFetch from './components/DataFetch'
 import AutoCompleteText from './components/AutoCompleteText'
 import AutoCompleteApi from './components/AutoCompleteApi'
-import Buttons from './components/Buttons'
 import Footer from './components/Footer'
 
 import {
@@ -47,7 +46,6 @@ function Home() {
         <br /> <br />
         <AutoCompleteText />
         <br /> <br />
-        <Buttons />
       </div>
       <DataFetch />
       <Footer />
