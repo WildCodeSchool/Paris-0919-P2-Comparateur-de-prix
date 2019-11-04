@@ -3,6 +3,7 @@ import DataFetch from './components/DataFetch'
 import AutoCompleteText from './components/AutoCompleteText'
 import AutoCompleteApi from './components/AutoCompleteApi'
 import Buttons from './components/Buttons'
+import Footer from './components/Footer'
 
 import {
   BrowserRouter as Router,
@@ -49,7 +50,7 @@ function Home() {
         <Buttons />
       </div>
       <DataFetch />
-      
+      <Footer />
     </>
   )
 }
