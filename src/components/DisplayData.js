@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DisplayData({ data }) {
+const DisplayData = ({ data }) =>  {
   console.log('DATA DDDDDDD')
  
   return (

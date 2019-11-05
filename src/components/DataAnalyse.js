@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DataAnalyse({ data }) {
+const DataAnalyse = ({ data }) => {
   console.log('DATA analyse')
   const SO2 = data.SO2.value_upm;
   const NO2 = (data.NO2.value_upm);
