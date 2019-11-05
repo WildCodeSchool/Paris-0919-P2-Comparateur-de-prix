@@ -36,13 +36,13 @@ class DataFetch extends React.Component {
   }
 
   render() {
-    console.log(this.state.data);
+    console.log(this.state.data)
     return (
       <>
         <button type="button" onClick={this.getData}>
           Obtenir la pollution en direct
         </button>
-        { this.state.isLoading ? (
+        {this.state.isLoading ? (
           <div>
             <DisplayData data={this.state.data} />
             <DataAnalyse data={this.state.data} />
