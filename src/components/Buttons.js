@@ -9,7 +9,7 @@ class Buttons extends React.Component{
     render (){
 
         return<div>
-            <button className="but" onClick={ (e) => { this.clicked(""); } }>Start</button>
+            <button className="but" onClick={ (e) => { this.clicked("") } }>Start</button>
         </div>;
 
     }

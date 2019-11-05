@@ -1,20 +1,20 @@
 import React from 'react'
 import './AutoComplete.css'
 
-export default class AutoCompleteText extends React.Component {
-  constructor(props) {
-    super(props)
-    this.items = [
-      '15 rue de poissy',
-      '40 rue du poulet',
-      '2 rue de la chèvre',
-      '40 rue de chepaskoi',
-    ]
-    this.state = {
-      suggestions: [],
-      text: '',
-    }
+ class AutoCompleteText extends React.Component {
+
+  state = {
+    suggestions: [],
+    text: '',
   }
+
+  items = [
+    '15 rue de poissy',
+    '40 rue du poulet',
+    '2 rue de la chèvre',
+    '40 rue de chepaskoi',
+  ]
+  
   onTextChanged = e => {
     const value = e.target.value
     let suggestions = []
@@ -64,3 +64,5 @@ export default class AutoCompleteText extends React.Component {
     )
   }
 }
+
+export default AutoCompleteText
