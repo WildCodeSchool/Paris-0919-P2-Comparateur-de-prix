@@ -81,6 +81,7 @@ class AutoCompleteApi extends React.Component {
             name="start"
             type="text"
             value={this.state.start}
+            longLat={this.state.coord}
             onChange={this.handleChange}
           />
           {this.renderSugegestions()}
