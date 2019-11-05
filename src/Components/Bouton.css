@@ -1,6 +1,6 @@
 .round-button {
   display: inline-block;
-  position: relative;
+  position: absolute;
   z-index: 1;
   height: 3rem;
   width: 3rem;
@@ -13,7 +13,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: transform .2s;
   margin: 10cm;
-  margin-left: 8cm;
+  margin-left: 7cm;
 border: solid black;
 }
 .round-button::after,
@@ -29,6 +29,7 @@ border: solid black;
   transition: transform .25s;
   will-change: transform;
 ;
+
 }
 .round-button::before {
   top: 40%;
@@ -41,4 +42,5 @@ border: solid black;
 .round-button:focus::before {
   transform: rotate(90deg) translateZ(0);
 }
+
 
