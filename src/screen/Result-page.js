@@ -15,5 +15,4 @@ function ResultPage() {
     </div>
   )
 }
-
 export default ResultPage
