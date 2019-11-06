@@ -6,10 +6,11 @@ class AutoCompleteApi extends React.Component {
   state = {
     start: '',
     suggestions: [],
+    coord: [],
   }
 
   handleSubmit = e => {
-    e.preventDefault() 
+    e.preventDefault()
   }
 
   handleChange = e => {
@@ -32,7 +33,7 @@ class AutoCompleteApi extends React.Component {
       // Extract the DATA from the received response
       .then(
         response =>
-          console.log('TESTTESTTEST  ', response.data.features) ||
+          console.log('Coordonnées:  ', response.data) ||
           response.data.features,
       )
       // Use this data to update the state
@@ -45,9 +46,11 @@ class AutoCompleteApi extends React.Component {
 
   suggestionsSelected(value) {
     this.setState(() => ({
-      start: value,
+      start: value.properties.label,
       suggestions: [],
+      coord: value.geometry.coordinates,
     }))
+    this.props.fetch(value.geometry.coordinates)
   }
 
   renderSugegestions() {
@@ -59,9 +62,8 @@ class AutoCompleteApi extends React.Component {
       <ul>
         {suggestions.map(item => (
           <li
-            onClick={() =>
-              this.suggestionsSelected(item.properties.label)
-            }
+            onClick={() => this.suggestionsSelected(item)}
+            key={item.properties.label}
           >
             {item.properties.label}
           </li>
