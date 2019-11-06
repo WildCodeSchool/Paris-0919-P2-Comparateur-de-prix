@@ -19,6 +19,7 @@ import './AutoComplete.css'
     'Chauvin Arnoux, 190 Rue Championnet, 75018 Paris',
     'LTD International, 43 Rue du FG Montmartre, 75009 Paris',
     'Baselec Entreprise, 56 Boulevard Diderot, 75012 Paris',
+    'Ubisoft France, 2 rue du Rohan, 93100 Paris',
   ]
   
   onTextChanged = e => {
