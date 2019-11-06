@@ -13,10 +13,10 @@ class Form extends React.Component {
   }
   render(){
     return(
-      <form className="Form">
-          <AutoCompleteApi fetch={this.handleFetch} />
-          <AutoCompleteText />
-          <DataFetch coord={this.state.coordo} />
+      <form className="Form" >
+        <AutoCompleteApi fetch={this.handleFetch} />
+        <AutoCompleteText />
+        <DataFetch coord={this.state.coordo} />
       </form>
     )
   }

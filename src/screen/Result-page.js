@@ -7,18 +7,9 @@ function ResultPage() {
   return (
     <div className="all">
       <div className="container">
-        <div className="titre">
-          <h1>Greengood</h1>
-        </div>
-        <div className="recap">
-          <p> Recapitulatif</p>
-        </div>
-        <div className="echelle"></div>
+        <h1>TEST</h1>
         <div className="Note">
-          <div className="progress"></div>
-          <div className="jeune"></div>
-          <div className="warn"></div>
-          <div className="warning"></div>
+          <div className="cursor"></div>
         </div>
       </div>
     </div>
