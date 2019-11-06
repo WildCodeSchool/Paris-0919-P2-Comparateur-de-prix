@@ -19,7 +19,7 @@ class Home extends React.Component {
       <>
         <h2>Accueil</h2>
 
-        <div className="App-Component">
+        <div>
           <AutoCompleteApi fetch={this.handleFetch} />
 
           <AutoCompleteText />

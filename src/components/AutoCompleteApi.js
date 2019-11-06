@@ -50,6 +50,7 @@ class AutoCompleteApi extends React.Component {
       suggestions: [],
       coord: value.geometry.coordinates,
     }))
+    this.props.fetch(value.geometry.coordinates)
   }
 
   renderSugegestions() {
@@ -81,7 +82,6 @@ class AutoCompleteApi extends React.Component {
             name="start"
             type="text"
             value={this.state.start}
-            fetch={this.state.coord}
             onChange={this.handleChange}
           />
           {this.renderSugegestions()}
