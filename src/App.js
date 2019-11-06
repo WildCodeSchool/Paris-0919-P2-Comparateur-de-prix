@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 
 import Home from './screen/Home'
+import ResultPage from './screen/Result-page'
 import About from './screen/About'
 import Footer from './components/Footer'
 
@@ -23,6 +24,9 @@ export default function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/resultpage">
+          <ResultPage />
         </Route>
       </Switch>
       <Footer />

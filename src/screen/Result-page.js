@@ -2,7 +2,8 @@ import React from 'react'
 import '../App'
 import './Result-page.css'
 
-function Main() {
+function ResultPage() {
+  console.log("hello result page")
   return (
     <div className="all">
       <div className="container">
@@ -24,4 +25,4 @@ function Main() {
   )
 }
 
-export default Main
+export default ResultPage
