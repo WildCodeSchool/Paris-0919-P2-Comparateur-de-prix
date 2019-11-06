@@ -11,6 +11,11 @@ class DataFetch extends React.Component {
     isLoading: false,
   }
 
+  componentWillUnmount() {
+    this.getData()
+    console.log('WILLMOUNT')
+  }
+
   getData = () => {
     axios
       .get('https://api.plume.io/3.0/live?', {
@@ -23,7 +28,7 @@ class DataFetch extends React.Component {
       // Extract the DATA from the received response
       .then(
         response =>
-          console.log('fdsfsdfsdfsfsdf ', response.data.values) ||
+          console.log('reponse plume', response.data.values) ||
           response.data.values,
       )
       // Use this data to update the state
@@ -33,19 +38,20 @@ class DataFetch extends React.Component {
           isLoading: true,
         }),
       )
+      .then(console.log('from datafetch: ', this.state.data))
+    this.props.fetchPollution(this.state.values)
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <>
-          <button
-            type="button"
-            className="DataFetch-but"
-            onClick={this.getData}
-          >
-            Obtenir la pollution en direct
-          </button>
+        <button
+          type="button"
+          className="DataFetch-but"
+          onClick={this.getData}
+        >
+          Obtenir la pollution en direct
+        </button>
         {this.state.isLoading ? (
           <div>
             <DisplayData data={this.state.data} />

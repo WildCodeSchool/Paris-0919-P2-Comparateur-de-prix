@@ -1,9 +1,9 @@
 import React from 'react'
-import '../App'
+
 import './Result-page.css'
 
-function ResultPage() {
-  console.log("hello result page")
+function ResultPage(props) {
+  console.log('hello result page')
   return (
     <div className="all">
       <div className="container">
