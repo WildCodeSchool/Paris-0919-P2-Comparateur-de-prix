@@ -47,7 +47,10 @@ import './AutoComplete.css'
     return (
       <ul>
         {suggestions.map(item => (
-          <li onClick={() => this.suggestionsSelected(item)}>
+          <li
+            onClick={() => this.suggestionsSelected(item)}
+            key={item}
+          >
             {item}
           </li>
         ))}
