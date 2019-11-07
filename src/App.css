@@ -1,8 +1,11 @@
+body {
+  background-color: hsla(0, 0%, 0%, 0);
+}
 .splash {
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 100vh;
-  background-image: url('./assets/loader.gif');
+  background-image: url('./assets/loader.svg');
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 95px;
