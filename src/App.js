@@ -8,11 +8,13 @@ import Footer from './components/Footer'
 
 class App extends React.Component {
   state = {
-    result: [],
+    result: null,
   }
 
   handleResult = data => {
     this.setState({ result: data })
+    console.log("from App: ", data)
+    console.log("from state App: ", this.state.result)
   }
 
   render() {
@@ -29,13 +31,13 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home data={this.handleResult}/>
           </Route>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/resultpage" data={this.handleResult}>
-            <ResultPage />
+          <Route path="/resultpage">
+            <ResultPage data={this.state.result}/>
           </Route>
         </Switch>
         <Footer />

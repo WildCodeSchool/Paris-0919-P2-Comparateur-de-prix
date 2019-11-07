@@ -16,9 +16,11 @@ class Home extends React.Component {
 
   handleFetchPollution = pollution => {
     this.setState({ pollution: pollution })
+    console.log("from home: ", this.state.pollution)
+    this.props.data(pollution)
   }
+
   render() {
-    console.log('from Home pollution: ', this.state.pollution)
     return (
       <>
         <AutoCompleteApi fetch={this.handleFetchCoord} />
