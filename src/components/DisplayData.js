@@ -1,8 +1,6 @@
 import React from 'react'
 
-const DisplayData = ({ data }) =>  {
-  console.log('DATA DDDDDDD')
- 
+const DisplayData = ({ data }) => {
   return (
     <div>
       <ul>
