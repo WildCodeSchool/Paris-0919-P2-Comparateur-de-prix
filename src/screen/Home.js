@@ -26,12 +26,7 @@ class Home extends React.Component {
       <>
         <AutoCompleteApi fetch={this.handleFetchCoord} />
         <AutoCompleteText />
-        <Link to="/resultpage">
-          <DataFetch
-            coord={this.state.coord}
-            fetchPollution={this.handleFetchPollution}
-          />
-        </Link>
+        <DataFetch coord={this.state.coord} fetchPollution={this.handleFetchPollution} />
       </>
     )
   }
