@@ -25,16 +25,14 @@ class Home extends React.Component {
     }
     return (
       <>
-        <div className="splash">
-          <AutoCompleteApi fetch={this.handleFetchCoord} />
-          <AutoCompleteText />
-          <Link to="/resultpage">
-            <DataFetch
-              coord={this.state.coord}
-              fetchPollution={this.handleFetchPollution}
-            />
-          </Link>
-        </div>
+        <AutoCompleteApi fetch={this.handleFetchCoord} />
+        <AutoCompleteText />
+        <Link to="/resultpage">
+          <DataFetch
+            coord={this.state.coord}
+            fetchPollution={this.handleFetchPollution}
+          />
+        </Link>
       </>
     )
   }
