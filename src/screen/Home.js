@@ -9,13 +9,6 @@ class Home extends React.Component {
   state = {
     coord: [],
     pollution: '',
-    splash: true,
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ splash: false })
-    }, 3000)
   }
 
   handleFetchCoord = coord => {
