@@ -3,11 +3,19 @@ import { Switch, Route, Link } from 'react-router-dom'
 import DataFetch from '../components/DataFetch'
 import AutoCompleteText from '../components/AutoCompleteText'
 import AutoCompleteApi from '../components/AutoCompleteApi'
+import './Home.css'
 
 class Home extends React.Component {
   state = {
     coord: [],
     pollution: '',
+    splash: true,
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ splash: false })
+    }, 3000)
   }
 
   handleFetchCoord = coord => {
@@ -17,8 +25,11 @@ class Home extends React.Component {
   handleFetchPollution = pollution => {
     this.setState({ pollution: pollution })
   }
+
   render() {
-    console.log('from Home pollution: ', this.state.pollution)
+    if (this.state.splash) {
+      return <div className="splash"></div>
+    }
     return (
       <>
         <AutoCompleteApi fetch={this.handleFetchCoord} />
