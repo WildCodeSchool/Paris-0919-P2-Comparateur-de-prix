@@ -8,6 +8,7 @@ class Home extends React.Component {
   state = {
     coord: [],
     pollution: '',
+    add: ''
   }
 
   handleFetchCoord = coord => {

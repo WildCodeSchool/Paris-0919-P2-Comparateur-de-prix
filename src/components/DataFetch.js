@@ -28,7 +28,7 @@ class DataFetch extends React.Component {
       )
       setTimeout(() => {
         this.props.fetchPollution(this.state.data)
-      }, 1000);
+      }, 500);
     }
 
   render() {
