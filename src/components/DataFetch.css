@@ -1,9 +1,25 @@
 .DataFetch-but {
-  width: 25%;
-  cursor: pointer;
-  text-transform: capitalize;
-  background-color: rgb(188, 231, 188);
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 8px;
-  box-shadow: 10px;
-}
+    background-color: rgb(181, 221, 212);
+    border: 3px solid rgb(35, 122, 148);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: background-color 0.5s ease, color 1s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(177, 171, 171, 0.5);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    align-items: center;
+    margin: auto;
+  
+  }
+  
+  .DataFetch-but:hover {
+    background-color: rgb(104, 176, 218);
+    color: white;
+  }
+ 
+  
+
+
