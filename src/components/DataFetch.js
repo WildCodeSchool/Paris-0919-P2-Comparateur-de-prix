@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Switch, Route, Link } from 'react-router-dom'
 import DisplayData from './DisplayData'
 import ConfigKeys from '../config/ConfigKeys'
 import DataAnalyse from './DataAnalyse'
@@ -9,11 +10,6 @@ class DataFetch extends React.Component {
   state = {
     data: '',
     isLoading: false,
-  }
-
-  componentWillUnmount() {
-    this.getData()
-    console.log('WILLMOUNT')
   }
 
   getData = () => {
@@ -29,18 +25,13 @@ class DataFetch extends React.Component {
       .then(
         response =>
           console.log('reponse plume', response.data.values) ||
-          response.data.values,
+          this.setState({data: response.data.values}, ()=>{
+            this.props.fetchPollution(this.state.data)
+          })
       )
-      // Use this data to update the state
-      .then(value =>
-        this.setState({
-          data: value,
-          isLoading: true,
-        }),
-      )
-      .then(console.log('from datafetch: ', this.state.data))
-    this.props.fetchPollution(this.state.values)
-  }
+      // setTimeout(() => {
+      // }, 500);
+    }
 
   render() {
     return (
@@ -52,14 +43,6 @@ class DataFetch extends React.Component {
         >
           Obtenir la pollution en direct
         </button>
-        {this.state.isLoading ? (
-          <div>
-            <DisplayData data={this.state.data} />
-            <DataAnalyse data={this.state.data} />
-          </div>
-        ) : (
-          <div>... Chargement</div>
-        )}
       </>
     )
   }

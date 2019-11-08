@@ -1,5 +1,6 @@
 import React from 'react'
-import { Switch, Route, Link } from 'react-router-dom'
+import { withRouter, Switch, Route, Link } from 'react-router-dom'
+
 import Home from './screen/Home'
 import ResultPage from './screen/Result-page'
 import About from './screen/About'
@@ -8,18 +9,20 @@ import './App.css'
 
 class App extends React.Component {
   state = {
-    result: [],
-    splash: true,
+    result: '',
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ splash: false })
-    }, 3000)
+  routeChange = () => {
+    const path = 'resultpage'
+    this.props.history.push(path)
   }
 
   handleResult = data => {
-    this.setState({ result: data })
+    this.setState({ result: data }, ()=>{
+      console.log("from state App: ", this.state.result)
+      console.log("from App: ", data)
+      this.routeChange()
+    })
   }
 
   render() {
@@ -39,13 +42,13 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home data={this.handleResult}/>
           </Route>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/resultpage" data={this.handleResult}>
-            <ResultPage />
+          <Route path="/resultpage">
+            <ResultPage data={this.state.result}/>
           </Route>
         </Switch>
         <Footer />
@@ -54,4 +57,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default withRouter(App)

@@ -162,7 +162,7 @@ const DataAnalyse = ({ data }) => {
     const resultIndex = Math.max(...resultTab);
     //result 
     console.log('index: ', resultIndex);
-    
+    this.props.back(resultIndex)
   return (
     <div>
       

@@ -9,6 +9,7 @@ class Home extends React.Component {
   state = {
     coord: [],
     pollution: '',
+    add: ''
   }
 
   handleFetchCoord = coord => {
@@ -17,22 +18,20 @@ class Home extends React.Component {
 
   handleFetchPollution = pollution => {
     this.setState({ pollution: pollution })
+    console.log("from home: ", this.state.pollution)
+    this.props.data(pollution)
   }
 
   render() {
     if (this.state.splash) {
       return <div className="splash"></div>
     }
+
     return (
       <>
         <AutoCompleteApi fetch={this.handleFetchCoord} />
         <AutoCompleteText />
-        <Link to="/resultpage">
-          <DataFetch
-            coord={this.state.coord}
-            fetchPollution={this.handleFetchPollution}
-          />
-        </Link>
+        <DataFetch coord={this.state.coord} fetchPollution={this.handleFetchPollution} />
       </>
     )
   }
