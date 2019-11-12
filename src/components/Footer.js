@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import {NavLink} from "react-router-dom"
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
           <div className="outils-left">
             <ul>             
               <li>Contact</li>
-              <li>FAQ</li>
+              <NavLink to = '/Faq'>FAQ</NavLink>
               <li>Plumelab</li> 
             </ul> 
           </div>
