@@ -3,12 +3,20 @@ import DataAnalyse from '../components/DataAnalyse'
 import './Result-page.css'
 import DisplayData from '../components/DisplayData';
 
-function ResultPage(props) {
+class ResultPage extends React.Component {
+  state = {
+    index: null,
+  }
 
-  console.log("result: ", props.data);
-  const test = (Math.floor(Math.random()*100));
+  handleIndex = (data) => {
+    this.setState({index: data})
+  }
+
+  render(){
+  console.log("result: ", this.props.data);
+  //const test = (Math.floor(Math.random()*100));
+  const test = (this.state.index * 10)
   console.log(test);
-
   return (
     <div className="all">
       <div className="container">
@@ -17,11 +25,11 @@ function ResultPage(props) {
           <div className="cursor" style={{marginLeft: test + '%'}}></div>
         </div>
         <div>
-          <DisplayData data={props.data}/>
-          <DataAnalyse data={props.data}/>
+          <DisplayData data={this.props.data}/>
+          <DataAnalyse data={this.props.data} index={this.handleIndex}/>
         </div>
       </div>
     </div>
-  )
+  )}
 }
 export default ResultPage
