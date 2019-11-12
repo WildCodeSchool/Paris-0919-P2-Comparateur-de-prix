@@ -61,13 +61,14 @@ import './AutoComplete.css'
     const { text } = this.state
     return (
       <div className="AutoCompleteText">
-        <label>Entreprise: </label>
+       
         <input
           id="text"
           name="text"
           value={text}
           onChange={this.onTextChanged}
           type="text"
+          placeholder="Entreprise"
         />
         {this.renderSugegestions()}
       </div>

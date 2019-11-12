@@ -1,22 +1,22 @@
-.AutoCompleteText [type = text]{
-    border-radius: 5px;
+.AutoCompleteApi [type = text]{
+    margin-top: 10%;
     margin-left: 36%;
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
     border-bottom: 1px solid black ;
-    margin-top: 4%;
-    font-size:100%;
+    font-size: 100%;
+    border-radius: 5px;
+    
 }
 
-.AutoCompleteText input {
+.AutoCompleteApi input  {
     width: 30%;
     height: auto;
     color: black;
 }
 
-.AutoCompleteText ul {
+.AutoCompleteApi ul {
     list-style-type: none;
     text-align: center;
 }
-

@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { Switch, Route, Link } from 'react-router-dom'
 import DisplayData from './DisplayData'
-import ConfigKeys from '../config/ConfigKeys'
+import ConfigKeys from '../config/ConfigKey'
 import DataAnalyse from './DataAnalyse'
 import './DataFetch.css'
 
@@ -35,15 +35,15 @@ class DataFetch extends React.Component {
 
   render() {
     return (
-      <>
+      
         <button
           type="button"
           className="DataFetch-but"
           onClick={this.getData}
         >
-          Obtenir la pollution en direct
+         PLUME LABS IT
         </button>
-      </>
+      
     )
   }
 }

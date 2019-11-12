@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 
 
-import './AutoComplete.css'
+import './AutoCompleteApi.css'
 
 class AutoCompleteApi extends React.Component {
   state = {
@@ -76,15 +76,16 @@ class AutoCompleteApi extends React.Component {
 
   render() {
     return (
-      <div className="AutoCompleteText">
+      <div className="AutoCompleteApi">
         <form onSubmit={this.handleSubmit}>
-          <label>Domicile: </label>
+          
           <input
             id="start"
             name="start"
             type="text"
             value={this.state.start}
             onChange={this.handleChange}
+            placeholder="Domicile"
           />
           {this.renderSugegestions()}
         </form>
