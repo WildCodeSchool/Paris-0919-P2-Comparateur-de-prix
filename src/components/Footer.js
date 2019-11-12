@@ -1,24 +1,40 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom'
+
+import { SocialIcon } from 'react-social-icons';
 
 function Footer() {
   return (
     <div>
-      <div className="row">       
-          <div className="outils-left">
-            <ul>             
-              <li>Contact</li>
-              <li>FAQ</li>
-              <li>Plumelab</li> 
-            </ul> 
-          </div>
-          <div className="outils-right">
-            <ul>                  
-              <li><a href="https://fr-fr.facebook.com/" rel="facebook">Facebook</a></li>
-              <li><a href="https://fr.linkedin.com" rel="linkedin">Linkedin</a></li>
-              <li><a href="https://www.pinterest.fr" rel="pinterest">Pinterest</a></li>
-            </ul>          
-          </div>       
+         
+      <div className="row">
+     
+        
+          
+
+            <div className="one">
+              
+               <Link to="/about">A propos</Link>
+              
+              <a href="">Contact</a>
+            </div>
+
+
+    
+   <div className="titre">
+     <h4> LOL </h4> 
+        <div className="icons">
+          <SocialIcon url="https://twitter.com/plume_labs?lang=fr" />
+          <SocialIcon url="https://www.linkedin.com/company/plume-labs/?originalSubdomain=fr" />
+          <SocialIcon url="https://www.instagram.com/plume_labs/" />
+        </div> 
+        </div>
+        <div className="two">
+              <a href="">FAQ</a>
+              <a href="https://plumelabs.com/fr/">Plumelab</a>
+
+            </div>
       </div>
     </div>
   );
