@@ -3,6 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom'
 import DataFetch from '../components/DataFetch'
 import AutoCompleteText from '../components/AutoCompleteText'
 import AutoCompleteApi from '../components/AutoCompleteApi'
+import './Home.css'
 
 class Home extends React.Component {
   state = {
@@ -22,6 +23,10 @@ class Home extends React.Component {
   }
 
   render() {
+    if (this.state.splash) {
+      return <div className="splash"></div>
+    }
+
     return (
       <>
         <AutoCompleteApi fetch={this.handleFetchCoord} />

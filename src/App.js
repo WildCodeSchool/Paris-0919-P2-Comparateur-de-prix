@@ -5,10 +5,18 @@ import Home from './screen/Home'
 import ResultPage from './screen/Result-page'
 import About from './screen/About'
 import Footer from './components/Footer'
+import './App.css'
 
 class App extends React.Component {
   state = {
     result: '',
+    splash: true,
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ splash: false })
+    }, 3000)
   }
 
   routeChange = () => {
@@ -17,14 +25,17 @@ class App extends React.Component {
   }
 
   handleResult = data => {
-    this.setState({ result: data }, ()=>{
-      console.log("from state App: ", this.state.result)
-      console.log("from App: ", data)
+    this.setState({ result: data }, () => {
+      console.log('from state App: ', this.state.result)
+      console.log('from App: ', data)
       this.routeChange()
     })
   }
 
   render() {
+    if (this.state.splash) {
+      return <div className="splash"></div>
+    }
     return (
       <div>
         <ul>
@@ -38,13 +49,13 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-            <Home data={this.handleResult}/>
+            <Home data={this.handleResult} />
           </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/resultpage">
-            <ResultPage data={this.state.result}/>
+            <ResultPage data={this.state.result} />
           </Route>
         </Switch>
         <Footer />
