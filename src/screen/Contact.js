@@ -35,10 +35,10 @@ render() {
             <h1>Contact</h1>
 
             <form onSubmit={this.submitForm}>
-                <fieldset>
-                    <legend>Informations</legend>
+                <div>
+
                     <div className="form-data">
-                        <label htmlFor="name">Nom de l'utilisateur :</label>
+                        <label htmlFor="name"> Nom :</label>
                         <input
                             type="text"
                             id="name"
@@ -49,7 +49,7 @@ render() {
                     </div>
 
                     <div className="form-data">
-                        <label htmlFor="poster">Adresse mail de l'utilisateur :</label>
+                        <label htmlFor="poster">Email :</label>
                         <input
                             type="text"
                             id="poster"
@@ -69,11 +69,11 @@ render() {
                             value={this.state.comment}
                         />
                     </div>
-                    <hr />
-                    <div className="form-data">
-                        <input type="submit" value="Envoyer" />
+                    
+                    <div className="form-send">
+                        <input type="submit" value="Envoyer" input/>
                     </div>
-                </fieldset>
+                </div>
             </form>
         </div>
 
