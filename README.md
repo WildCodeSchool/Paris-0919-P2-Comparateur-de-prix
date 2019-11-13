@@ -6,4 +6,5 @@ Burndown: https://docs.google.com/spreadsheets/d/1pwzeF5w8SuzrvkaOPnX8NQ5XzCe2xU
 
 Board: https://trello.com/b/c12tz5Nd
 
-api PlumLab key: ajouter le component ConfigKeys en local SEULEMENT (demander le fichier à Arthur) dans le dossier "components" et mettre ce "ConfigKeys.js" en gitignore
+api PlumLab key: ajouter le component ConfigKeys en local SEULEMENT (demander le fichier à Arthur) et mettre ce "ConfigKeys.js" 
+chemin : src/config/ConfigKeys

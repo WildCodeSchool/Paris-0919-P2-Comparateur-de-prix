@@ -14,12 +14,15 @@ function Footer() {
           <Link to="/Contact">CONTACT</Link>
         </div>
 
-        <div className="titre">
-          <div className="icons">
-            <SocialIcon url="https://twitter.com/plume_labs?lang=fr" />
-            <SocialIcon url="https://www.linkedin.com/company/plume-labs/?originalSubdomain=fr" />
-            <SocialIcon url="https://www.instagram.com/plume_labs/" />
-          </div>
+    
+   <div className="titre">
+     <h4> Rejoins-nous </h4> 
+        <div className="icons">
+    
+          <SocialIcon url="https://twitter.com/plume_labs?lang=fr" />
+          <SocialIcon url="https://www.linkedin.com/company/plume-labs/?originalSubdomain=fr" />
+          <SocialIcon url="https://www.instagram.com/plume_labs/" />
+        </div> 
         </div>
         <div className="two">
           <Link to="/Faq">FAQ</Link>
