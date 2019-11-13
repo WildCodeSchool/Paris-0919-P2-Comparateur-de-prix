@@ -8,7 +8,7 @@ function Footer() {
       <div className="row">       
           <div className="outils-left">
             <ul>             
-              <li>Contact</li>
+              <NavLink to = '/Contact'>CONTACT</NavLink>
               <NavLink to = '/Faq'>FAQ</NavLink>
               <li>Plumelab</li> 
             </ul> 

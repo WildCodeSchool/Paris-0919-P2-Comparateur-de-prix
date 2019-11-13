@@ -6,6 +6,7 @@ import ResultPage from './screen/Result-page'
 import About from './screen/About'
 import Footer from './components/Footer'
 import Faq from './screen/Faq'
+import Contact from './screen/Contact'
 
 class App extends React.Component {
   state = {
@@ -49,6 +50,9 @@ class App extends React.Component {
           </Route>
           <Route exact path="/Faq">
             <Faq />
+          </Route>
+          <Route exact path="/Contact">
+            <Contact/>
           </Route>
         </Switch>
         <Footer />
