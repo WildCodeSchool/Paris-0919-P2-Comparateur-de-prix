@@ -1,8 +1,9 @@
 import React from 'react'
+import './DisplayData.css'
 
 const DisplayData = ({ data }) => {
   return (
-    <div>
+    <div className="DisplayData">
       <ul>
         <li>Dioxyde d'azote: {data.NO2.value_upm}</li>
         <li>Souffre: {data.SO2.value_upm}</li>
