@@ -1,25 +1,31 @@
-import React from 'react';
-import './Footer.css';
-import {NavLink} from "react-router-dom"
+import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
+
+import { SocialIcon } from "react-social-icons";
 
 function Footer() {
   return (
     <div>
-      <div className="row">       
-          <div className="outils-left">
-            <ul>             
-              <NavLink to = '/Contact'>CONTACT</NavLink>
-              <NavLink to = '/Faq'>FAQ</NavLink>
-              <li>Plumelab</li> 
-            </ul> 
+      <div className="row">
+        <div className="one">
+          <Link to="/about">A propos</Link>
+
+          <Link to="/Contact">CONTACT</Link>
+        </div>
+
+        <div className="titre">
+          <div className="icons">
+            <SocialIcon url="https://twitter.com/plume_labs?lang=fr" />
+            <SocialIcon url="https://www.linkedin.com/company/plume-labs/?originalSubdomain=fr" />
+            <SocialIcon url="https://www.instagram.com/plume_labs/" />
           </div>
-          <div className="outils-right">
-            <ul>                  
-              <li><a href="https://fr-fr.facebook.com/" rel="facebook">Facebook</a></li>
-              <li><a href="https://fr.linkedin.com" rel="linkedin">Linkedin</a></li>
-              <li><a href="https://www.pinterest.fr" rel="pinterest">Pinterest</a></li>
-            </ul>          
-          </div>       
+        </div>
+        <div className="two">
+          <Link to="/Faq">FAQ</Link>
+
+          <a href="https://plumelabs.com/fr/">Plumelab</a>
+        </div>
       </div>
     </div>
   );

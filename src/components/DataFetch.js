@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { Switch, Route, Link } from 'react-router-dom'
 import DisplayData from './DisplayData'
-import ConfigKeys from '../config/ConfigKeys'
+import ConfigKeys from '../components/config/ConfigKeys'
 import DataAnalyse from './DataAnalyse'
 import './DataFetch.css'
 

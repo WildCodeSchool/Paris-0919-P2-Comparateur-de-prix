@@ -46,9 +46,7 @@ class App extends React.Component {
           <li>
             <Link to="/">Accueil</Link>
           </li>
-          <li>
-            <Link to="/about">à propos</Link>
-          </li>
+         
         </ul>
 
         <Switch>
