@@ -23,8 +23,9 @@ function Footer() {
 
     
    <div className="titre">
-     <h4> LOL </h4> 
+     <h4> Rejoins-nous </h4> 
         <div className="icons">
+    
           <SocialIcon url="https://twitter.com/plume_labs?lang=fr" />
           <SocialIcon url="https://www.linkedin.com/company/plume-labs/?originalSubdomain=fr" />
           <SocialIcon url="https://www.instagram.com/plume_labs/" />
