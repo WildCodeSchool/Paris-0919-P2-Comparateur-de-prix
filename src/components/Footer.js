@@ -1,25 +1,18 @@
-import React from 'react';
-import './Footer.css';
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
 
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from "react-social-icons";
 
 function Footer() {
   return (
     <div>
-         
       <div className="row">
-     
-        
-          
+        <div className="one">
+          <Link to="/about">A propos</Link>
 
-            <div className="one">
-              
-               <Link to="/about">A propos</Link>
-              
-              <a href="">Contact</a>
-            </div>
-
+          <Link to="/Contact">CONTACT</Link>
+        </div>
 
     
    <div className="titre">
@@ -32,10 +25,10 @@ function Footer() {
         </div> 
         </div>
         <div className="two">
-              <a href="">FAQ</a>
-              <a href="https://plumelabs.com/fr/">Plumelab</a>
+          <Link to="/Faq">FAQ</Link>
 
-            </div>
+          <a href="https://plumelabs.com/fr/">Plumelab</a>
+        </div>
       </div>
     </div>
   );
