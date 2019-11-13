@@ -63,3 +63,4 @@ typings/
 # do not share
 .interne-only/*
 ConfigKeys.js
+ConfigKeys.jsx
