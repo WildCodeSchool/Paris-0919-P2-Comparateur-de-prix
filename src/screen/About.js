@@ -3,8 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <h2>à propos</h2>
       <div>
+        <h1>À propos</h1>
+
         <p>
           Nous couvrons les principaux polluants importants pour votre
           santé: PM2.5, PM10, NO2 et O3.
