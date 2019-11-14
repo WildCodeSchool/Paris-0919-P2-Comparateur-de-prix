@@ -28,11 +28,11 @@ class Home extends React.Component {
     }
 
     return (
-      <>
+      <div className="Home-inputs">
         <AutoCompleteApi fetch={this.handleFetchCoord} />
         <AutoCompleteText />
         <DataFetch coord={this.state.coord} fetchPollution={this.handleFetchPollution} />
-      </>
+      </div>
     )
   }
 }

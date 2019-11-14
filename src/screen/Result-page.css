@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -16,14 +17,10 @@
   margin: 0;
   padding: 0;
   height: 50vh;
-  width: 80%;
+  width: 90%;
   border-top-left-radius: 150px 100px;
   border-bottom-right-radius: 150px 100px;
-  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
-}
-
-.all {
-  text-align: center;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .echelle {
@@ -37,7 +34,12 @@
 .Note {
   width: 80%;
   height: 20px;
-  background: linear-gradient(90deg, rgba(4,133,182,1) 0%, rgba(102,102,102,1) 50%, rgba(51,51,51,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 133, 182, 1) 0%,
+    rgba(102, 102, 102, 1) 50%,
+    rgba(51, 51, 51, 1) 100%
+  );
   border-radius: 10px;
   border: solid gray 1px;
 }
@@ -66,6 +68,7 @@
   border-left: solid 1px black;
   border-bottom: solid 1px black;
   background-color: white;
+  cursor: pointer;
 }
 
 .moreInfo:hover {
@@ -76,7 +79,7 @@
   animation: moreInfoAnimation 1s;
 }
 
-@keyframes cursorAnimation { 
+@keyframes cursorAnimation {
   0% {
     margin-left: 0;
     opacity: 0;
@@ -86,12 +89,12 @@
   }
 }
 
-@keyframes moreInfoAnimation { 
+@keyframes moreInfoAnimation {
   0% {
     margin-top: -100px;
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
   }

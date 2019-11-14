@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 
-
 import './AutoComplete.css'
 
 class AutoCompleteApi extends React.Component {
@@ -28,7 +27,7 @@ class AutoCompleteApi extends React.Component {
       .get('https://api-adresse.data.gouv.fr/search/', {
         params: {
           q: this.state.start,
-          limit: '8',
+          limit: '5',
         },
       })
 

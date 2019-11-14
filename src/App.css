@@ -32,3 +32,8 @@
     opacity: 0;
   }
 }
+
+.App-return {
+  display: flex;
+  justify-content: center;
+}
