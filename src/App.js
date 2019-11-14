@@ -7,7 +7,7 @@ import About from './screen/About'
 import Footer from './components/Footer'
 import Faq from './screen/Faq'
 import Contact from './screen/Contact'
-
+import loader from './assets/loader.svg'
 import './App.css'
  
 
@@ -43,8 +43,8 @@ class App extends React.Component {
     return (
       <div>
         <ul>
-          <li>
-            <Link to="/">Accueil</Link>
+          <li className="App-return">
+            <Link to="/"><img src={loader}/></Link>
           </li>
          
         </ul>

@@ -1,0 +1,13 @@
+html {
+    background-image: url("../assets/nuage.jpg");
+    background-size: 100vh;
+background-repeat: no-repeat;
+}
+
+.Home-inputs {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+}
