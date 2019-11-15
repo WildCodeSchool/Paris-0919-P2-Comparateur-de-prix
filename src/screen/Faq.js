@@ -3,7 +3,7 @@ import './Faq.css'
 
 const Faq = () => {
   return (
-    <div>
+    <div className="Faq-container">
       <h1>Qui sommes nous ?</h1>
       <p>
         Go Green est une application qui veille à la santé de tous en
