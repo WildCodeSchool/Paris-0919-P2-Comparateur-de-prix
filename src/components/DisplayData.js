@@ -9,7 +9,7 @@ const DisplayData = ({ data }) => {
           Dioxyde d'azote <div>{data.NO2.value_upm}</div>{' '}
         </li>
         <li>
-          Souffre <div>{data.SO2.value_upm}</div>{' '}
+          Soufre <div>{data.SO2.value_upm}</div>{' '}
         </li>
         <li>
           Particules (PM10) <div>{data.PM10.value_upm}</div>{' '}

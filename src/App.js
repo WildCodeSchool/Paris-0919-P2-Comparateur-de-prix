@@ -37,7 +37,11 @@ class App extends React.Component {
 
   render() {
     if (this.state.splash) {
-      return <div className="splash"></div>
+      return (
+        <div className="container-splash">
+          <div className="splash"></div>
+        </div>
+      )
     }
     return (
       <div>
