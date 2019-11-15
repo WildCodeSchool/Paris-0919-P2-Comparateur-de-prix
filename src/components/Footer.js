@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons'
 
 function Footer() {
   return (
-    <div>
+    <div className="footer-container">
       <div className="row">
         <div className="one">
           <Link to="/about">À propos</Link>

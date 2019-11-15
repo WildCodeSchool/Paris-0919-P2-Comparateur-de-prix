@@ -77,13 +77,13 @@ class AutoCompleteApi extends React.Component {
     return (
       <div className="AutoCompleteText">
         <form onSubmit={this.handleSubmit}>
-          <label>Domicile: </label>
           <input
             id="start"
             name="start"
             type="text"
             value={this.state.start}
             onChange={this.handleChange}
+            placeholder="Domicile"
           />
           {this.renderSugegestions()}
         </form>

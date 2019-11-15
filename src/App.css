@@ -1,3 +1,8 @@
+switch {
+  display: flex;
+  flex-direction: column;
+}
+
 .splash {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -36,4 +41,7 @@
 .App-return {
   display: flex;
   justify-content: center;
+}
+
+.footer {
 }

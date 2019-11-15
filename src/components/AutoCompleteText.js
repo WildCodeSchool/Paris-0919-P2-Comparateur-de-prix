@@ -1,8 +1,7 @@
 import React from 'react'
 import './AutoComplete.css'
 
- class AutoCompleteText extends React.Component {
-
+class AutoCompleteText extends React.Component {
   state = {
     suggestions: [],
     text: '',
@@ -11,7 +10,7 @@ import './AutoComplete.css'
   items = [
     'WildCodeSchool, 11 rue de Poissy, 75005, Paris',
     'Google France, 8 rue Londres, 75009, Paris ',
-    'Societe General, 3 rue Rébeval, 75019, Paris',  
+    'Societe General, 3 rue Rébeval, 75019, Paris',
     'HSBC Paris Auber,10 rue Auber, 75009 Paris',
     'Infobat, 34 rue de Picpus, 75012 PARIS',
     'Ionis X, 2 rue des quatre fils, 75003 Paris',
@@ -21,7 +20,7 @@ import './AutoComplete.css'
     'Baselec Entreprise, 56 Boulevard Diderot, 75012 Paris',
     'Ubisoft France, 2 rue du Rohan, 93100 Paris',
   ]
-  
+
   onTextChanged = e => {
     const value = e.target.value
     let suggestions = []
@@ -61,13 +60,13 @@ import './AutoComplete.css'
     const { text } = this.state
     return (
       <div className="AutoCompleteText">
-        <label>Entreprise: </label>
         <input
           id="text"
           name="text"
           value={text}
           onChange={this.onTextChanged}
           type="text"
+          placeholder="Entreprise"
         />
         {this.renderSugegestions()}
       </div>

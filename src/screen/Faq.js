@@ -9,13 +9,13 @@ const Faq = () => {
         Go Green est une application qui veille à la santé de tous en
         mesurant le taux de pollution sur le tajet domicile-travail.
       </p>
-      <h1>Dans quel but avons nous créé cette applicaton ?</h1>
+      <h1>Dans quel but avons nous créé cette application?</h1>
       <p>
         Pour que les entreprises puissent prendre des mesures pour
         tenter de diminuer leur empreinte écologique en encourageant
         le télé-travail .
       </p>
-      <h1>Qu'est ce que cet applicaton mesure ?</h1>
+      <h1>Qu'est ce que cet application mesure?</h1>
       <p>
         Nous couvrons les principaux polluants importants pour votre
         santé: Dioxyde d'azote, Souffre, Particules (PM10), Ozone.
