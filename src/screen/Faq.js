@@ -15,7 +15,7 @@ const Faq = () => {
         tenter de diminuer leur empreinte écologique en encourageant
         le télé-travail .
       </p>
-      <h1>Qu'est ce que cet application mesure?</h1>
+      <h1>Qu'est ce que cette application mesure?</h1>
       <p>
         Nous couvrons les principaux polluants importants pour votre
         santé: Dioxyde d'azote, Souffre, Particules (PM10), Ozone.
