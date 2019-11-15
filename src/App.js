@@ -9,7 +9,6 @@ import Faq from './screen/Faq'
 import Contact from './screen/Contact'
 import loader from './assets/loader.svg'
 import './App.css'
- 
 
 class App extends React.Component {
   state = {
@@ -38,15 +37,20 @@ class App extends React.Component {
 
   render() {
     if (this.state.splash) {
-      return <div className="splash"></div>
+      return (
+        <div className="container-splash">
+          <div className="splash"></div>
+        </div>
+      )
     }
     return (
       <div>
         <ul>
           <li className="App-return">
-            <Link to="/"><img src={loader}/></Link>
+            <Link to="/">
+              <img src={loader} />
+            </Link>
           </li>
-         
         </ul>
 
         <Switch>
@@ -63,10 +67,10 @@ class App extends React.Component {
             <Faq />
           </Route>
           <Route exact path="/Contact">
-            <Contact/>
+            <Contact />
           </Route>
         </Switch>
-        <Footer />
+        <Footer className="footer" />
       </div>
     )
   }

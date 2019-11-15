@@ -3,22 +3,22 @@ import './Faq.css'
 
 const Faq = () => {
   return (
-    <div>
+    <div className="Faq-container">
       <h1>Qui sommes nous ?</h1>
       <p>
         Go Green est une application qui veille à la santé de tous en
-        mesurant le taux de pollution sur le tajet domicile-travail.
+        mesurant le taux de pollution sur le trajet domicile-travail.
       </p>
-      <h1>Dans quel but avons nous créé cette applicaton ?</h1>
+      <h1>Dans quel but avons nous créé cette application?</h1>
       <p>
         Pour que les entreprises puissent prendre des mesures pour
         tenter de diminuer leur empreinte écologique en encourageant
-        le télé-travail .
+        le télétravail .
       </p>
-      <h1>Qu'est ce que cet applicaton mesure ?</h1>
+      <h1>Qu'est ce que cette application mesure?</h1>
       <p>
         Nous couvrons les principaux polluants importants pour votre
-        santé: Dioxyde d'azote, Souffre, Particules (PM10), Ozone.
+        santé: Dioxyde d'azote, Soufre, Particules (PM10), Ozone.
       </p>
       {/* <h1>
 				<li>Qui sommes nous?</li>

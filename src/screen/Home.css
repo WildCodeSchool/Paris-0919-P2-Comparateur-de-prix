@@ -1,6 +1,8 @@
 html {
   background-image: url('../assets/nuage.jpg');
-  background-size: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -10,4 +12,5 @@ html {
   justify-content: space-around;
   flex-direction: column;
   height: 40vh;
+  align-items: center;
 }

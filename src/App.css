@@ -1,14 +1,21 @@
+switch {
+  display: flex;
+  flex-direction: column;
+}
+
 .splash {
+  margin: auto;
+  margin-top: 20vh;
   background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  max-width: 350px;
   background-image: url('./assets/loader.svg');
   background-repeat: no-repeat;
   background-position: left top;
-  padding-top: 95px;
-  margin-bottom: 60px;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeOut;
@@ -36,4 +43,7 @@
 .App-return {
   display: flex;
   justify-content: center;
+}
+
+.footer {
 }
