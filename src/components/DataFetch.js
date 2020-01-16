@@ -25,13 +25,13 @@ class DataFetch extends React.Component {
       .then(
         response =>
           console.log('reponse plume', response.data.values) ||
-          this.setState({data: response.data.values}, ()=>{
+          this.setState({ data: response.data.values }, () => {
             this.props.fetchPollution(this.state.data)
-          })
+          }),
       )
-      // setTimeout(() => {
-      // }, 500);
-    }
+    // setTimeout(() => {
+    // }, 500);
+  }
 
   render() {
     return (
@@ -41,7 +41,7 @@ class DataFetch extends React.Component {
           className="DataFetch-but"
           onClick={this.getData}
         >
-          Obtenir la pollution en direct
+          Indice pollution
         </button>
       </>
     )

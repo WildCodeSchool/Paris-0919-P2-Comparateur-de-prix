@@ -1,8 +1,7 @@
-h1 {
-    padding-left: 10px;
-    font-size: 30px;
+.Faq-container {
+  margin: 10px;
 }
 
-p {
-    padding-left: 10px;
+.Faq-container h1 {
+  font-size: 18px;
 }

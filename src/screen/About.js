@@ -1,10 +1,12 @@
 import React from 'react'
+import './About.css'
 
 const About = () => {
   return (
     <>
-      <h2>à propos</h2>
-      <div>
+      <div className="About-container">
+        <h1>À propos</h1>
+
         <p>
           Nous couvrons les principaux polluants importants pour votre
           santé: PM2.5, PM10, NO2 et O3.

@@ -1,4 +1,7 @@
 .DisplayData ul {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  font-size: 0.8em;
+  text-align: center;
 }

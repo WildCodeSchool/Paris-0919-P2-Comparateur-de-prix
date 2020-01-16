@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 
-
 import './AutoComplete.css'
 
 class AutoCompleteApi extends React.Component {
@@ -28,7 +27,7 @@ class AutoCompleteApi extends React.Component {
       .get('https://api-adresse.data.gouv.fr/search/', {
         params: {
           q: this.state.start,
-          limit: '8',
+          limit: '5',
         },
       })
 
@@ -78,13 +77,13 @@ class AutoCompleteApi extends React.Component {
     return (
       <div className="AutoCompleteText">
         <form onSubmit={this.handleSubmit}>
-          <label>Domicile: </label>
           <input
             id="start"
             name="start"
             type="text"
             value={this.state.start}
             onChange={this.handleChange}
+            placeholder="Domicile"
           />
           {this.renderSugegestions()}
         </form>
